@@ -1,0 +1,117 @@
+.circle{
+  height: 200px;
+  width: 200px;
+  background: #62fcb5;
+  border-radius: 50%;
+  animation: run 1.5s infinite;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  }
+@keyframes run {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(180deg);
+  }
+  50%{
+    transform: rotate(280deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.another-circle {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(rgba(255,255,255, 0.7), rgba(255,255,255,0.3));
+  margin-top: ;
+  top: 50%;
+  backdrop-filter: blur(100px);
+  border-bottom: 2px solid green;
+  
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.loading h2 {
+  color: gray;
+}
+.loading{
+  position: absolute;
+}
+
+.bars div {
+  height: 10px;
+  width: 10px;
+  background: #000;
+  margin: 10px;
+ 
+}
+
+.bars div:nth-child(1) {
+  animation: on ease 1s infinite;
+  animation-delay: .5s;
+}
+.bars div:nth-child(2) {
+  animation: of ease 1s infinite;
+  animation-delay: 0.8s;
+}
+
+@keyframes of {
+  0% {
+    background: #000;
+  }
+  
+  100%{
+    background: #47fdf0;
+  }
+}
+
+.bars div:nth-child(3) {
+  animation: off ease 1s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes off {
+  0%{
+    background: #000;
+  }
+  100%{
+    background: #47fdf0;
+  }
+}
+
+@keyframes on {
+  0%{
+    background: #000;
+  }
+  100%{
+    background: #47fdf0;
+  }
+}
+
+.bars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
