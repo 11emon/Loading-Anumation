@@ -1,7 +1,18 @@
+body{
+  background: rgb(202, 237, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+
+
+
 .circle{
   height: 200px;
   width: 200px;
-  background: #62fcb5;
+  background: #3b44bb;
   border-radius: 50%;
   animation: run 1.5s infinite;
   z-index: 0;
@@ -27,23 +38,16 @@
   }
 }
 
-body{
-  background: skyblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-}
+
 
 .another-circle {
   height: 200px;
   width: 200px;
   background: linear-gradient(rgba(255,255,255, 0.7), rgba(255,255,255,0.3));
-  margin-top: ;
+  margin-top: 0;
   top: 50%;
   backdrop-filter: blur(100px);
   border-bottom: 2px solid green;
-  
   z-index: 1;
   position: relative;
   overflow: hidden;
